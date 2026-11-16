@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Should You Look for When Choosing a Reliable Restaurant Broker Near You?</title>
+<meta name="description" content="What should you look for when choosing a reliable restaurant broker near you? Learn about experience, market knowledge, valuation, marketing, and more.">
+<link rel="icon" type="image/jpeg" href="https://images1.loopnet.com/i2/DgRmbTxWVXdMpvbHSEv7yqLHyOXFZMzsM3fZmtaLeJE/118/mike-santos.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --white:#ffffff;
+  --ink:#0e1013;
+  --ink-2:#23262b;
+  --body:#41454c;
+  --muted:#767b83;
+  --line:#e9eaed;
+  --card:#8F8F8F;
+  --card-soft:rgba(143,143,143,.10);
+  --radius:18px;
+  --shadow:0 22px 48px -28px rgba(15,17,21,.42);
+  --max:1080px;
+  --content:880px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:'Montserrat', sans-serif;
+  background:var(--white);
+  color:var(--body);
+  line-height:1.8;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* ============ PROGRESS BAR ============ */
+#progress{
+  position:fixed;top:0;left:0;height:3px;width:0%;
+  background:linear-gradient(90deg,var(--ink) 0%,var(--card) 100%);
+  z-index:999;transition:width .1s linear;
+}
+
+/* ============ HEADER ============ */
+.site-header{
+  position:sticky;top:0;z-index:80;
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:var(--max);margin:0 auto;
+  padding:13px 24px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{
+  width:46px;height:46px;border-radius:50%;object-fit:cover;
+  border:2px solid var(--card);
+  box-shadow:0 8px 18px -12px rgba(15,17,21,.6);
+  transition:transform .45s cubic-bezier(.2,.7,.2,1);
+}
+.brand:hover img{transform:scale(1.06) rotate(-2deg)}
+.brand-name{
+  font-size:13.5px;font-weight:800;color:var(--ink);
+  letter-spacing:.01em;line-height:1.25;display:block;
+}
+.brand-sub{
+  display:block;font-size:10px;font-weight:600;color:var(--muted);
+  letter-spacing:.18em;text-transform:uppercase;margin-top:2px;
+}
+.btn-dark{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--ink);color:#fff;
+  padding:12px 22px;border-radius:999px;
+  font-size:13.5px;font-weight:600;letter-spacing:.02em;
+  text-decoration:none;border:1px solid var(--ink);
+  transition:transform .3s ease, background .3s ease, box-shadow .3s ease;
+  white-space:nowrap;
+}
+.btn-dark:hover{
+  background:var(--ink-2);transform:translateY(-2px);
+  box-shadow:0 16px 30px -18px rgba(15,17,21,.85);
+}
+.btn-dark svg{width:15px;height:15px;flex:0 0 auto}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;overflow:hidden;
+  padding:76px 24px 58px;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(143,143,143,.18), transparent 46%),
+    radial-gradient(circle at 88% -6%, rgba(143,143,143,.14), transparent 42%),
+    var(--white);
+}
+.hero::after{
+  content:"";position:absolute;right:-90px;bottom:-120px;
+  width:340px;height:340px;border-radius:50%;
+  border:1px solid rgba(143,143,143,.28);
+  pointer-events:none;
+}
+.hero-inner{max-width:var(--content);margin:0 auto;position:relative;z-index:2}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--ink);color:#fff;
+  font-size:10.5px;font-weight:700;letter-spacing:.19em;text-transform:uppercase;
+  padding:9px 17px;border-radius:999px;margin-bottom:26px;
+}
+.eyebrow .dot{
+  width:7px;height:7px;border-radius:50%;background:var(--card);
+  box-shadow:0 0 0 4px rgba(143,143,143,.35);
+  animation:pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 3px rgba(143,143,143,.30)}
+  50%{box-shadow:0 0 0 8px rgba(143,143,143,0)}
+}
+h1{
+  font-size:clamp(1.85rem, 4.2vw, 3.1rem);
+  line-height:1.14;
+  font-weight:800;
+  letter-spacing:-.022em;
+  color:var(--ink);
+  margin:0 0 24px;
+}
+.hero-meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  font-size:12.5px;font-weight:600;color:var(--muted);
+  letter-spacing:.03em;
+}
+.hero-meta .chip{
+  background:var(--card-soft);
+  border:1px solid rgba(143,143,143,.28);
+  color:var(--ink-2);
+  padding:6px 14px;border-radius:999px;
+  font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+}
+.hero-meta .sep{width:4px;height:4px;border-radius:50%;background:var(--card)}
+
+/* ============ CONTENT ============ */
+.content{
+  max-width:var(--content);
+  margin:0 auto;
+  padding:56px 24px 20px;
+}
+.content p{
+  margin:0 0 22px;
+  font-size:1.015rem;
+  color:var(--body);
+  font-weight:400;
+}
+.content a{
+  color:var(--ink);
+  font-weight:700;
+  text-decoration:none;
+  border-bottom:2px solid var(--card);
+  padding-bottom:1px;
+  transition:color .28s ease, border-color .28s ease, background .28s ease;
+}
+.content a:hover{
+  color:var(--card);
+  border-bottom-color:var(--ink);
+}
+
+/* ---- Section cards ---- */
+.card{
+  position:relative;
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:26px 28px 6px;
+  margin:0 0 24px;
+  transition:transform .4s cubic-bezier(.2,.7,.2,1), box-shadow .4s ease, border-color .4s ease;
+  box-shadow:0 1px 0 rgba(15,17,21,.02);
+}
+.card::before{
+  content:"";position:absolute;left:0;top:24px;bottom:24px;width:4px;
+  background:var(--card);opacity:.85;
+  border-radius:0 4px 4px 0;
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+  border-color:#dcdee1;
+}
+.sec{
+  display:flex;align-items:flex-start;gap:15px;
+  margin:0 0 18px;
+}
+.num{
+  flex:0 0 auto;
+  width:46px;height:46px;border-radius:14px;
+  background:var(--card);color:#fff;
+  display:grid;place-items:center;
+  font-size:14px;font-weight:800;letter-spacing:.02em;
+  box-shadow:0 12px 24px -16px rgba(143,143,143,1);
+  transition:transform .4s cubic-bezier(.2,.7,.2,1), background .3s ease;
+}
+.card:hover .num{transform:rotate(-6deg) scale(1.05);background:var(--ink)}
+.sec-title{
+  margin:0;padding-top:4px;
+  font-size:clamp(1.12rem, 2.1vw, 1.42rem);
+  font-weight:800;color:var(--ink);
+  line-height:1.36;letter-spacing:-.012em;
+}
+
+/* ---- FAQ ---- */
+.faq{
+  background:var(--card-soft);
+  border:1px solid rgba(143,143,143,.30);
+  border-radius:16px;
+  padding:20px 22px;
+  margin:0 0 16px;
+  transition:transform .35s ease, box-shadow .35s ease, background .35s ease;
+}
+.faq:hover{
+  transform:translateX(4px);
+  background:rgba(143,143,143,.16);
+  box-shadow:0 14px 30px -24px rgba(15,17,21,.7);
+}
+.faq h3{
+  margin:0 0 8px;
+  font-size:1rem;font-weight:800;color:var(--ink);
+  line-height:1.45;letter-spacing:-.005em;
+}
+.faq p{
+  margin:0;
+  font-size:.965rem;
+  color:var(--body);
+}
+
+/* ---- Conclusion ---- */
+.conclusion{
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:30px 28px 10px;
+  margin:14px 0 40px;
+  background:
+    linear-gradient(180deg, rgba(143,143,143,.10) 0%, rgba(255,255,255,0) 62%),
+    var(--white);
+  box-shadow:var(--shadow);
+}
+.conclusion h2{
+  margin:0 0 18px;
+  font-size:clamp(1.25rem, 2.6vw, 1.7rem);
+  font-weight:800;color:var(--ink);letter-spacing:-.015em;
+}
+
+/* ============ MAP ============ */
+.map-section{
+  margin:10px 0 46px;
+  padding-top:44px;
+  border-top:1px solid var(--line);
+}
+.map-head{
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:20px;
+}
+.map-head h2{
+  margin:0;
+  font-size:clamp(1.15rem, 2.4vw, 1.5rem);
+  font-weight:800;color:var(--ink);letter-spacing:-.015em;
+}
+.map-pin{
+  width:46px;height:46px;border-radius:14px;
+  background:var(--ink);color:#fff;
+  display:grid;place-items:center;flex:0 0 auto;
+  box-shadow:0 14px 26px -18px rgba(15,17,21,.95);
+}
+.map-pin svg{width:20px;height:20px}
+.map-wrap{
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  background:var(--white);
+  line-height:0;
+}
+.map-wrap iframe{
+  width:100%;
+  height:450px;
+  border:0;
+  display:block;
+  filter:grayscale(.14) contrast(1.02);
+}
+.map-note{
+  margin:16px 0 0;
+  font-size:.9rem;
+  color:var(--muted);
+  display:flex;align-items:center;gap:8px;
+}
+.map-note svg{width:15px;height:15px;flex:0 0 auto;color:var(--card)}
+
+/* ============ FOOTER ============ */
+.site-footer{
+  background:var(--ink);
+  color:#d8dade;
+  padding:56px 24px 34px;
+  margin-top:20px;
+}
+.footer-inner{
+  max-width:var(--max);margin:0 auto;
+  display:grid;grid-template-columns:1.3fr 1fr 1fr;
+  gap:36px;
+}
+.footer-brand{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.footer-brand img{
+  width:56px;height:56px;border-radius:50%;object-fit:cover;
+  border:2px solid var(--card);
+}
+.footer-brand strong{
+  display:block;color:#fff;font-size:14.5px;font-weight:800;line-height:1.35;
+}
+.footer-brand span{
+  display:block;font-size:10px;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--card);margin-top:3px;
+}
+.footer-text{font-size:.9rem;color:#a5a9b0;margin:0;line-height:1.85;max-width:340px}
+.footer-col h4{
+  margin:0 0 14px;color:#fff;font-size:11px;font-weight:800;
+  letter-spacing:.18em;text-transform:uppercase;
+}
+.footer-col p{margin:0 0 10px;font-size:.9rem;color:#a5a9b0;line-height:1.7}
+.footer-bottom{
+  max-width:var(--max);margin:36px auto 0;padding-top:22px;
+  border-top:1px solid rgba(255,255,255,.10);
+  font-size:.78rem;color:#7d828a;letter-spacing:.04em;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
+}
+
+/* ============ REVEAL ANIMATION ============ */
+.reveal{
+  opacity:0;
+  transform:translateY(26px);
+  transition:opacity .75s cubic-bezier(.2,.7,.2,1), transform .75s cubic-bezier(.2,.7,.2,1);
+  will-change:opacity, transform;
+}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:900px){
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .footer-brand{grid-column:1/-1}
+}
+@media (max-width:640px){
+  .header-inner{padding:11px 16px}
+  .brand img{width:40px;height:40px}
+  .brand-name{font-size:11.5px}
+  .brand-sub{font-size:9px;letter-spacing:.14em}
+  .btn-dark{padding:10px 16px;font-size:12px}
+  .btn-dark span{display:none}
+  .hero{padding:48px 18px 40px}
+  .content{padding:38px 18px 12px}
+  .card{padding:20px 18px 4px}
+  .card::before{top:18px;bottom:18px}
+  .num{width:40px;height:40px;border-radius:12px;font-size:12.5px}
+  .sec{gap:12px}
+  .conclusion{padding:24px 18px 8px}
+  .map-wrap iframe{height:340px}
+  .footer-inner{grid-template-columns:1fr;gap:26px}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important;transition:none !important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <img src="https://images1.loopnet.com/i2/DgRmbTxWVXdMpvbHSEv7yqLHyOXFZMzsM3fZmtaLeJE/118/mike-santos.jpg" alt="Restaurant Broker | Commonwealth Company">
+      <span>
+        <span class="brand-name">Restaurant Broker | Commonwealth Company</span>
+        <span class="brand-sub">Charleston, SC</span>
+      </span>
+    </a>
+    <a class="btn-dark" href="tel:+18435778877">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>(843) 577-8877</span>
+    </a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="eyebrow reveal"><span class="dot"></span> Restaurant Broker Guide</div>
+    <h1 class="reveal">What Should You Look for When Choosing a Reliable Restaurant Broker Near You?</h1>
+    <div class="hero-meta reveal">
+      <span class="chip">Charleston, SC</span>
+      <span class="sep"></span>
+      <span class="chip">Buyer &amp; Seller Guide</span>
+      <span class="sep"></span>
+      <span class="chip">10 Key Checks</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ARTICLE ================= -->
+<main class="content">
+
+  <p class="reveal">Buying or selling a restaurant is a major business decision. It involves careful planning and a clear understanding of the market. Whether you want to purchase an established restaurant or sell your current business, the right professional can make the process easier. A reliable broker helps you understand your options and avoid costly mistakes. They also connect buyers and sellers with suitable opportunities.</p>
+
+  <p class="reveal">However, choosing the right professional takes more than a quick online search. You need someone who understands restaurant operations and business sales. They should also know how to handle negotiations and guide you through important documents. Working with a professional <a href="https://maps.app.goo.gl/wjzMtJhS1kpk29119" target="_blank" rel="noopener">Restaurant Broker in Charleston SC</a> can help you make informed decisions while navigating the local restaurant market.</p>
+
+  <p class="reveal">Before choosing a broker, it is important to understand their experience, services, communication style, and professional reputation.</p>
+
+  <!-- 01 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">01</span>
+      <h2 class="sec-title">Look for Experience in Restaurant Business Sales</h2>
+    </div>
+    <p>Experience should be one of your first considerations when choosing a restaurant broker. Selling a restaurant is different from selling an ordinary commercial property. It involves business records, equipment, inventory, staff arrangements, customer relationships, and other important details.</p>
+    <p>An experienced Restaurant Business Broker understands these factors. They know what buyers usually ask about and what sellers need to prepare before listing a business. Their experience can also help identify potential problems early in the process.</p>
+    <p>Ask how many restaurant transactions they have handled. Find out whether they have worked with businesses similar to yours. A broker with relevant experience is more likely to understand your needs and provide useful guidance throughout the transaction.</p>
+  </section>
+
+  <!-- 02 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">02</span>
+      <h2 class="sec-title">Understand Their Knowledge of the Charleston Market</h2>
+    </div>
+    <p>Local market knowledge plays an important role in restaurant transactions. Every city has different business conditions. Customer demand, property locations, nearby competition, and neighborhood activity can affect a restaurant's appeal.</p>
+    <p>A Restaurant Broker in Charleston SC should understand the local business environment. They should be familiar with different commercial areas and the types of restaurants that attract buyers. This knowledge helps sellers reach suitable prospects and allows buyers to explore businesses that match their goals.</p>
+    <p>Ask how the broker evaluates local demand. Find out whether they understand the differences between various restaurant locations. Their answers can help you determine whether they have practical knowledge of the area or simply work with general business listings.</p>
+  </section>
+
+  <!-- 03 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">03</span>
+      <h2 class="sec-title">Check Their Restaurant Valuation Process</h2>
+    </div>
+    <p>Knowing the actual value of a restaurant is essential before buying or selling. Sellers want a fair value for their investment. Buyers want to make sure they are not taking on an overpriced business.</p>
+    <p>A professional broker should explain how they evaluate a restaurant. They may review financial statements, revenue, operating expenses, equipment, inventory, lease terms, and business history. They should also consider the restaurant's location and customer base.</p>
+    <p>Do not rely on someone who gives you a value without asking questions or reviewing records. A reliable broker explains the factors behind their assessment. They should also help you understand how business performance and market conditions can affect buyer interest.</p>
+    <p>A clear valuation process supports better decisions and helps both parties enter negotiations with realistic expectations.</p>
+  </section>
+
+  <!-- 04 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">04</span>
+      <h2 class="sec-title">Ask About Their Marketing Strategy</h2>
+    </div>
+    <p>A restaurant can have strong potential and still struggle to attract buyers without proper marketing. A broker should have a clear plan for presenting your business to interested prospects.</p>
+    <p>Ask how they promote restaurant listings. Find out whether they use business listing platforms, professional networks, direct contacts, and targeted marketing. Their approach should focus on reaching qualified buyers rather than collecting random inquiries.</p>
+    <p>For sellers planning to sell my restaurant, a strong marketing strategy can make a meaningful difference. The broker should know how to present important business details while protecting confidential information.</p>
+    <p>A good marketing plan highlights the restaurant's strengths. It also gives potential buyers enough information to decide whether they want to learn more.</p>
+  </section>
+
+  <!-- 05 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">05</span>
+      <h2 class="sec-title">Review Their Professional Network</h2>
+    </div>
+    <p>A well-connected broker can bring useful opportunities to a restaurant transaction. Their professional network may include restaurant owners, investors, business buyers, accountants, attorneys, lenders, and property professionals.</p>
+    <p>These connections can help buyers discover suitable businesses. They may also help sellers reach people who are actively looking for restaurant investment opportunities.</p>
+    <p>Ask about the broker's relationships with other industry professionals. Find out how they connect with qualified buyers and whether they can refer you to other specialists when needed.</p>
+    <p>A broker who also understands <a href="http://thecommonwealthcompany.com/" target="_blank" rel="noopener">Restaurant Commercial Real Estate</a> can be helpful when a transaction involves both the business and its property. However, make sure they can explain which services they provide directly and when another professional is needed.</p>
+  </section>
+
+  <!-- 06 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">06</span>
+      <h2 class="sec-title">Evaluate Their Communication and Availability</h2>
+    </div>
+    <p>Clear communication is important during every stage of a restaurant transaction. Buyers and sellers often have questions about documents, negotiations, inspections, and closing requirements. Delayed responses can create confusion and slow down important decisions.</p>
+    <p>Choose a broker who explains things in simple language. They should respond to reasonable questions and keep you informed about meaningful updates.</p>
+    <p>During your first conversation, notice how they listen. A reliable professional should understand your goals before recommending a solution. They should not pressure you into a decision or make promises they cannot support.</p>
+    <p>Ask who will handle your transaction and how you can reach them. Knowing who to contact can make the entire process feel more organized.</p>
+  </section>
+
+  <!-- 07 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">07</span>
+      <h2 class="sec-title">Make Sure They Understand Due Diligence</h2>
+    </div>
+    <p>Due diligence is an important part of buying or selling a restaurant. It allows the parties to review important business information before completing the transaction. Skipping this step can lead to unexpected problems.</p>
+    <p>A knowledgeable broker should understand the common documents involved in a restaurant sale. These may include financial records, tax documents, equipment details, supplier agreements, lease information, licenses, and permits.</p>
+    <p>When you want to Buy a Restaurant, reviewing these records helps you understand what you are purchasing. It can also reveal issues that need further investigation.</p>
+    <p>A broker should encourage careful checks rather than rushing the process. They should also explain when you need an accountant, attorney, or other qualified professional to review specific documents.</p>
+  </section>
+
+  <!-- 08 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">08</span>
+      <h2 class="sec-title">Understand Their Role in Negotiations</h2>
+    </div>
+    <p>Negotiations can become difficult when buyers and sellers have different expectations. Sellers may focus on their investment and business history. Buyers may be more concerned about future performance, risks, and operating costs.</p>
+    <p>A skilled broker helps both sides communicate and work toward reasonable terms. They can present offers, discuss concerns, and help clarify important transaction conditions.</p>
+    <p>Ask how the broker handles disagreements. Find out whether they have experience negotiating terms beyond the basic sale amount. Matters such as equipment, inventory, training, lease arrangements, and closing dates may also require attention.</p>
+    <p>A reliable professional should remain fair and focused. They should explain the possible outcomes without forcing you to accept an offer that does not support your interests.</p>
+  </section>
+
+  <!-- 09 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">09</span>
+      <h2 class="sec-title">Confirm Their Credentials and Professional Reputation</h2>
+    </div>
+    <p>Before hiring a broker, take time to review their professional background. Check their business website, client feedback, experience, and relevant credentials. You can also ask for references from previous clients.</p>
+    <p>If the transaction involves commercial property, ask whether the broker holds the required real estate license for the services they provide. A Commercial Real Estate Broker may handle property related matters while a business broker focuses on the sale of the operating company. Some professionals may work across both areas, depending on their qualifications.</p>
+    <p>Do not make a decision based only on attractive advertisements. Look for consistent feedback about honesty, communication, and transaction support. A professional who can explain their experience clearly is easier to evaluate.</p>
+  </section>
+
+  <!-- 10 -->
+  <section class="card reveal">
+    <div class="sec">
+      <span class="num">10</span>
+      <h2 class="sec-title">Ask These Important Questions Before Hiring a Restaurant Broker</h2>
+    </div>
+    <p>A conversation with a potential broker can reveal a lot about their working style. Before signing an agreement, ask questions that help you understand their process and level of service.</p>
+
+    <div class="faq">
+      <h3>FAQ 1: What Does a Restaurant Broker Do During a Business Sale?</h3>
+      <p>A restaurant broker helps owners prepare and market their businesses for sale. They may assist with valuation, buyer inquiries, negotiations, and transaction coordination. Their role is to guide the parties through the business sale process.</p>
+    </div>
+
+    <div class="faq">
+      <h3>FAQ 2: How Do I Know Whether a Restaurant Broker Is Reliable?</h3>
+      <p>Check their experience, professional background, client reviews, and communication style. Ask for examples of similar transactions they have handled. A reliable broker should explain their process clearly and avoid making unrealistic promises.</p>
+    </div>
+
+    <div class="faq">
+      <h3>FAQ 3: Can a Restaurant Broker Help Me Buy an Existing Restaurant?</h3>
+      <p>Yes. A restaurant broker can help you explore available businesses and understand their basic financial and operational details. They can also assist with offers and negotiations. You should still arrange independent legal and financial reviews before completing a purchase.</p>
+    </div>
+
+    <div class="faq">
+      <h3>FAQ 4: Should I Choose a Restaurant Broker Who Also Handles Commercial Real Estate?</h3>
+      <p>It can be helpful when the transaction includes restaurant property. A broker with relevant commercial real estate experience may understand leases, property details, and location considerations. However, always verify their qualifications and the exact services they provide.</p>
+    </div>
+
+    <div class="faq">
+      <h3>FAQ 5: What Should I Discuss During My First Meeting With a Restaurant Broker?</h3>
+      <p>Discuss your business goals, experience, timeline, and expectations. Ask about their valuation process, marketing strategy, confidentiality practices, and transaction support. This conversation can help you decide whether their approach matches your needs.</p>
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section class="conclusion reveal">
+    <h2>Conclusion</h2>
+    <p>Choosing a reliable restaurant broker requires careful research and the right questions. Experience, local market knowledge, valuation skills, marketing, and communication all matter. You should also review their professional background and understand how they handle negotiations and due diligence.</p>
+    <p><a href="http://thecommonwealthcompany.com/" target="_blank" rel="noopener">Restaurant Broker | Commonwealth Company</a> understands that restaurant transactions involve important business decisions. Working with a knowledgeable Restaurant Broker in Charleston SC can help you explore opportunities with greater confidence. Whether you are preparing to sell an existing business or looking to purchase a restaurant, choose a professional who values clear communication and honest guidance. The right support can help you move forward with a better understanding of your options.</p>
+  </section>
+
+  <!-- ================= MAP ================= -->
+  <section class="map-section reveal" id="find-us">
+    <div class="map-head">
+      <span class="map-pin">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </span>
+      <h2>Find Us on Google Maps</h2>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.880183520574!2d-79.93255720740918!3d32.78029869417522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe7a11696cbbef%3A0x572e5745a57fa762!2s5%20Clifford%20St%2C%20Charleston%2C%20SC%2029401%2C%20USA!5e1!3m2!1sen!2s!4v1794850894740!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <p class="map-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 2"/></svg>
+      Restaurant Broker | Commonwealth Company — 171 Church St #300, Charleston, SC 29401, United States
+    </p>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <img src="https://images1.loopnet.com/i2/DgRmbTxWVXdMpvbHSEv7yqLHyOXFZMzsM3fZmtaLeJE/118/mike-santos.jpg" alt="Restaurant Broker | Commonwealth Company">
+        <span>
+          <strong>Restaurant Broker | Commonwealth Company</strong>
+          <span>Charleston, SC</span>
+        </span>
+      </div>
+      <p class="footer-text">Guiding restaurant buyers and sellers through valuation, marketing, negotiations, and due diligence in the Charleston market.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>171 Church St #300,<br>Charleston, SC 29401,<br>United States</p>
+      <p>(843) 577-8877</p>
+      <p>commonwealthjimm@prodigy.net</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Business Hours</h4>
+      <p>Monday – Friday<br>9:00 AM – 5:00 PM</p>
+      <p>Weekend visits by appointment.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Restaurant Broker | Commonwealth Company. All rights reserved.</span>
+    <span>Charleston, South Carolina</span>
+  </div>
+</footer>
+
+<script>
+/* ---------- Reading progress ---------- */
+(function(){
+  var bar = document.getElementById('progress');
+  function update(){
+    var h = document.documentElement;
+    var scrolled = h.scrollTop || document.body.scrollTop;
+    var height = h.scrollHeight - h.clientHeight;
+    var pct = height > 0 ? (scrolled / height) * 100 : 0;
+    bar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+  update();
+})();
+
+/* ---------- Scroll reveal ---------- */
+(function(){
+  var items = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){
+    items.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -60px 0px'});
+
+  items.forEach(function(el, i){
+    el.style.transitionDelay = (Math.min(i, 6) * 55) + 'ms';
+    io.observe(el);
+  });
+})();
+
+/* ---------- Year ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
